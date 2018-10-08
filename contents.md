@@ -149,7 +149,15 @@ subset of program space to search,
 
 ## In essence, all Machine Learning is:
 
-If give you an example, would you be able to learn the answers?
+If I was to give you a set of examples
+
+Would you be able to learn the answers?
+
+
+<br>
+#### Let's have a look at an example
+
+
 
 [NEXT]
 <!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
@@ -174,7 +182,7 @@ Let's try to build a system to predict whether a shape is a square or a triangle
 
 [NEXT]
 <!-- .slide: data-transition="slide-in fade-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
-## We want to find a division line
+## Which function divides the data
 
 <br>
 
@@ -196,7 +204,7 @@ The line defined by function
 
 [NEXT]
 <!-- .slide: data-transition="fade-in slide-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
-## So we can predict new data
+## Then we can predict new data
 
 <br>
 
@@ -289,16 +297,6 @@ i.e. **$f(x̄)$ = triangle  if ($0.3 x̄ + 10$) > 0.5 else square**
 We now have a system that "knows" how to differentiate triangles from squares
 
 
-
-[NEXT]
-<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
-
-## The core principles:
-* Explainability
-* Reproducibility
-* Monitoring 
-* Compliance
-
 [NEXT]
 <!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
 
@@ -314,9 +312,10 @@ We now have a system that "knows" how to differentiate triangles from squares
 ![classification_large](images/mlops1.png)
 
 
-
 [NEXT]
 <!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+# Growing jobs
 
 ## Data Scientists 
 In charge of development of models
@@ -326,6 +325,20 @@ In charge of development of data pipelines
 
 ## DataOps / ML Engineers
 In charge of productionisation of models, data pipelines & products
+
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+## The core principles:
+* Explainability
+* Reproducibility
+* Monitoring 
+* Compliance
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## Let's see how we can implement these
 
 
 [NEXT SECTION]
