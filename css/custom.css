@@ -87,7 +87,7 @@ code.medium {
 .background h3,
 .background h4,
 .background h5,
-.background p 
+.background p
 {
     color: white !important;
 }
@@ -290,3 +290,8 @@ img[alt="classification_small"] {
 .github {
     font-size: 20px !important;
 }
+
+section {
+    color:white;
+}
+

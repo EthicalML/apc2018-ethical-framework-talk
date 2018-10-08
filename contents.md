@@ -58,6 +58,21 @@
   </tr>
 </table>
 
+[NEXT]
+<!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
+
+## Best practices of AI in business
+
+> Overview of The Institute
+> <br>
+> <br>
+> Core concepts
+>
+> Best practices in industry
+> 
+> Next steps
+
+
 
 [NEXT]
 <!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
@@ -67,9 +82,9 @@
 #### <a href="http://ethical.institute">http://ethical.institute</a>
 
 [NEXT]
-<!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
+<!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
 
-## IEML phased rollout plan
+## Our phased rollout plan
 * **Phase 1 - Ethical ML by pledge**
     * Commit as a technology leader<br><br>
 * **Phase 2 - Ethical ML by process**
@@ -81,7 +96,7 @@
 
 
 [NEXT]
-<!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
+<!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
 
 ## Moral-consciousness matrix
 
@@ -98,21 +113,6 @@
 ### People can be <font color="#00ffda">conscious</font> and <font color="#00ffda">moral</font>
 
 
-
-
-[NEXT]
-<!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
-
-## A practical framework for Ethical ML
-
-> AI/ML Recap
-> <br>
-> <br>
-> Opportunities & Risks
->
-> Ethics by design
-> 
-> Next steps!
 
 
 [NEXT]
@@ -144,6 +144,151 @@ subset of program space to search,
 ```
 3) use the computational resources at our disposal to search this space for a program that works.
 
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+## In essence, all Machine Learning is:
+
+If give you an example, would you be able to learn the answers?
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+Given some input data, predict the correct output
+
+![shapes](images/shapes.svg)
+
+Let's try to build a system to predict whether a shape is a square or a triangle
+
+## How do we do this?
+
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## First, let's visualise it
+
+* Imagine a 2-d plot
+* The x-axis is the area of the input shape
+* The y-axis is the perimeter of the input shape
+
+![classification](images/classification-points.png)
+
+[NEXT]
+<!-- .slide: data-transition="slide-in fade-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## We want to find a division line
+
+<br>
+
+<div class="left-col">
+The line defined by function
+<br>
+<br>
+**$f(x̄) = mx̄ + b$**, where:
+<br>
+<br>
+**x̄** is input (area & perimeter) </li>
+<br>
+<br>
+**m** and **b** are weights/bias
+<br>
+</div>
+
+<img width="40%" src="images/classification-line.png">
+
+[NEXT]
+<!-- .slide: data-transition="fade-in slide-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## So we can predict new data
+
+<br>
+
+<div class="left-col">
+The result **$f(x̄)$** states whether it's a triangle or square
+<br>
+<br>
+(e.g. if it's larger than 0.5 it's triangle otherwise square)
+</div>
+
+<img width="40%" src="images/classification-newinput.png">
+
+
+<br>
+<br>
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+So now let's start with a blank brain
+
+[  ]
+
+The machine knows nothing yet...
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+Now let's take some data examples
+
+![shapes](images/shapes.svg)
+
+And let the machine do the learning
+
+
+
+[NEXT]
+<!-- .slide: data-transition="slide-in fade-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## The machine does the learning
+
+![classification](images/feature-1.jpg)
+
+We give it two examples (one square, one triangle)
+
+[NEXT]
+<!-- .slide: data-transition="fade-in" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## The machine does the learning
+
+![classification](images/feature-2.jpg)
+
+We give it more examples
+
+[NEXT]
+<!-- .slide:data-transition="fade-in slide-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## The machine does the learning
+
+![classification](images/feature-3.jpg)
+
+and more...
+
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## Minimising loss function
+
+We optimise the model by **minimising its loss**.
+
+Keep adjusting the weights...
+
+...until loss is not getting any smaller.
+
+![gradient_descent](images/gradient_descent_cropped.gif)
+
+
+[NEXT]
+<!-- .slide: data-transition="slide-in fade-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## Finding the weights!
+
+<img width="40%" src="images/classification-line.png">
+
+When it finishes, we find optimised weights and biases
+
+i.e. **$f(x̄)$ = triangle  if ($0.3 x̄ + 10$) > 0.5 else square**
+
+[NEXT]
+<!-- .slide: data-transition="fade-in slide-out" data-background="images/parti.png" class="background smallquote" style="color: white" -->
+## Now predict new data
+
+![classification_small](images/classification-newinput.png)
+
+We now have a system that "knows" how to differentiate triangles from squares
+
+
 
 [NEXT]
 <!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
@@ -153,6 +298,21 @@ subset of program space to search,
 * Reproducibility
 * Monitoring 
 * Compliance
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+### As your technical functions grow...
+
+![classification_large](images/mltemp1.png)
+
+[NEXT]
+<!-- .slide: data-background="images/parti.png" class="background smallquote" style="color: white" -->
+
+### So should your infrastructure
+
+![classification_large](images/mlops1.png)
+
 
 
 [NEXT]
@@ -176,19 +336,28 @@ In charge of productionisation of models, data pipelines & products
 [NEXT]
 <!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
 
+# Ethics by Pledge
+## The Machine Learning Pledge
+#### The 8 commitments to ensure ethics by design
+
+
+
+[NEXT]
+<!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
+
 ## 1. Ensure augmented (as opposed to artificial)
 
 
 <div class="left-col">
 
 <h3>Bad</h3>
-Using predictions without checks
+Automate end-to-end process from start
 
 <br>
 <br>
 
 <h3>Better</h3>
-Ensure human sign-off process
+Understand process, add human-in-the-loop, evaluate
 
 </div>
 <div class="right-col">
@@ -208,23 +377,23 @@ Ensure there is a process for a human signoff based on predictions and have a pr
 [NEXT]
 <!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
 
-## 2. Awareness of bias in data and models
+## 2. Evaluation of bias in development and production
 
 <div class="left-col">
 
 <h3>Bad</h3>
-Train on ALL data
+Train on ALL data, deploy, don't check
 
 <br>
 <br>
 
 <h3>Better</h3>
-Understand bias to avoid discrimination
+Optimise training, focus on edge cases, monitor
 
 </div>
 <div class="right-col">
 
-![line](images/duck.gif)
+![line](images/squaregif.gif)
 
 </div>
 
@@ -277,13 +446,13 @@ Understand the implication of both automating the process and reducing the costs
 <div class="left-col">
 
 <h3>Bad</h3>
-Take naive accuracy number and aim to increase
+Always try to blindly increase accuracy number
 
 <br>
 <br>
 
 <h3>Better</h3>
-Have an objective, consistent and transparency metric for accuracy
+Find relevant metrics for accuracy & cost function
 
 </div>
 <div class="right-col">
@@ -303,18 +472,18 @@ Ensure you run consistent cross-validated and bias-reduced sets of tests/simulat
 [NEXT]
 <!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
 
-## 5. Awareness and plan for audit trail
+## 5. Compliance by design
 
 <div class="left-col">
 
 <h3>Bad</h3>
-Override models and save hardcoded answers
+Use complex models without care 
 
 <br>
 <br>
 
 <h3>Better</h3>
-Store labelled data and changelog of work
+Add domain knowledge to introduce transparency
 
 </div>
 <div class="right-col">
@@ -323,20 +492,11 @@ Store labelled data and changelog of work
 
 </div>
 
-_note_
-
-### Bad
-Don't store the models together with its respective metadata which doesn't allow for transparency and audit trail
-
-### Better
-Ensure that models are stored with traceable labels used, as well as an abstracted set of the features 
-
-
 
 [NEXT]
 <!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
 
-## 6. Backwards compatibility and versioning
+## 6. Reproducibility by design
 
 <div class="left-col">
 
@@ -347,7 +507,7 @@ Assume previous models won't be re-used
 <br>
 
 <h3>Better</h3>
-Have a process to ensure backwards compatibility of features
+Have a process to ensure reproducibility and compatibility
 
 </div>
 <div class="right-col">
@@ -363,7 +523,7 @@ none
 [NEXT]
 <!-- .slide: data-background="images/partistat.png" class="background smallquote" style="color: white" -->
 
-## 7. Transparency on data/meta-data collection and usage
+## 7. Trust beyond the user
 
 <div class="left-col">
 
@@ -374,7 +534,7 @@ Assume stakeholders understand data usage
 <br>
 
 <h3>Better</h3>
-Provide comprehensible and transparent overview of storage, ownership and usage of the data/meta-data
+Build and communicate processes around data/meta-data, privacy, etc
 
 </div>
 <div class="right-col">
@@ -426,10 +586,10 @@ Applying this thinking into your actual projects
 
 [NEXT SECTION]
 <!-- .slide: data-background="images/spaceline.jpg" class="background smallest" style="color: white" -->
-# 4. Final words
+# 3. Final words
 
 [NEXT]
-<!-- .slide: data-background="images/network-background.jpg" class="background smallquote" -->
+<!-- .slide: data-background="images/spaceline.jpg" class="background smallest" style="color: white" -->
 
 ## Today we covered
 
@@ -443,7 +603,7 @@ Applying this thinking into your actual projects
 > Next steps!
 
 [NEXT]
-<!-- .slide: data-background="images/network-background.jpg" class="background" -->
+<!-- .slide: data-background="images/spaceline.jpg" class="background smallest" style="color: white" -->
 ### Code
 https://github.com/axsauze/apc-2018-privacy-conference
 
@@ -452,7 +612,7 @@ https://axsauze.github.io/apc-2018-privacy-conference
 
 
 [NEXT]
-<!-- .slide: data-background="images/network-background.jpg" class="background" -->
+<!-- .slide: data-background="images/spaceline.jpg" class="background smallest" style="color: white" -->
 
 <h2>Best Practices of AI in Business</h2>
 <h4>The Institute for Ethical AI & ML</h4>
